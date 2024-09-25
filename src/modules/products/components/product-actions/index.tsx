@@ -137,7 +137,7 @@ export default function ProductActions({
 
   return (
     <>
-      <div className="flex flex-col gap-y-2" ref={actionsRef}>
+      <div className="flex flex-col gap-y-4" ref={actionsRef}>
         <div>
           {product.variants.length > 1 && (
             <div className="flex flex-col gap-y-4">
@@ -155,7 +155,7 @@ export default function ProductActions({
                   </div>
                 )
               })}
-              <Divider />
+              <Divider className="mt-4"/>
             </div>
           )}
         </div>
@@ -171,7 +171,7 @@ export default function ProductActions({
           data-testid="add-product-button"
         >
           {!variant
-            ? "Select variant"
+            ? "Select Size"
             : !inStock
             ? "Out of stock"
             : "Add to cart"}

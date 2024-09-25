@@ -15,6 +15,10 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
+        hostname: "tokens.dijets.io",
+      },
+      {
+        protocol: "https",
         hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
       },
       {
@@ -25,6 +29,10 @@ const nextConfig = withStoreConfig({
         protocol: "https",
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "faha.lon1.digitaloceanspaces.com",
+      }
     ],
   },
 })

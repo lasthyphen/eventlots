@@ -4,6 +4,7 @@ import { Popover, Transition } from "@headlessui/react"
 import { Cart } from "@medusajs/medusa"
 import { Button } from "@medusajs/ui"
 import { useParams, usePathname } from "next/navigation"
+import { ShoppingBagIcon } from "lucide-react";
 import { Fragment, useEffect, useRef, useState } from "react"
 
 import { formatAmount } from "@lib/util/prices"
@@ -82,7 +83,11 @@ const CartDropdown = ({
             className="hover:text-ui-fg-base"
             href="/cart"
             data-testid="nav-cart-link"
-          >{`Cart (${totalItems})`}</LocalizedClientLink>
+          >							
+          <ShoppingBagIcon />
+          <span className="absolute bottom-0 right-0 inline-flex h-5 w-5 translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full border-2 bg-white text-center text-xs">
+            {totalItems}
+          </span></LocalizedClientLink>
         </Popover.Button>
         <Transition
           show={cartDropdownOpen}

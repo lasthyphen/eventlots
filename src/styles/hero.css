@@ -1,0 +1,481 @@
+:root {
+    --color-black: #222;
+    --color-off-black: #111;
+    --color-dark-grey: #686868;
+    --color-grey: #989898;
+    --color-mid-grey: #c2c2c2;
+    --color-light-mid-grey: #ddd;
+    --color-light-grey: #eaeaea;
+    --color-off-white: #f9f9f9;
+    --color-white: #fff;
+    --color-lemon: #fbe9ab;
+    --color-raspberry: #bf2d50;
+    --color-peach: #f9c1a0;
+    --color-mint: #d8ffa4;
+    --color-strawberry-cream: #efc7c2;
+    --color-light-stone: #f4f3ef;
+    --color-sand: #f8f2e3;
+    --color-light-peach: #ffe5d4;
+    --color-off-white-grey: #f8f8f8;
+    --color-off-white-sand: #fbf8f1;
+    --color-wedgewood-blue: #91a8d1;
+    --color-latte: #d8ccaf;
+    --color-error: #a14122;
+    --space-4: .4rem;
+    --space-5: .5rem;
+    --space-8: .8rem;
+    --space-10: 1rem;
+    --space-12: 1.2rem;
+    --space-15: 1.5rem;
+    --space-16: 1.6rem;
+    --space-20: 2rem;
+    --space-25: 2.5rem;
+    --space-30: 3rem;
+    --space-32: 3.2rem;
+    --space-35: 3.5rem;
+    --space-40: 4rem;
+    --space-45: 4.5rem;
+    --space-50: 5rem;
+    --space-55: 5.5rem;
+    --space-60: 6rem;
+    --space-65: 6.5rem;
+    --space-70: 7rem;
+    --space-75: 7.5rem;
+    --space-80: 8rem;
+    --space-85: 8.5rem;
+    --space-90: 9rem;
+    --space-100: 10rem;
+    --space-110: 11rem;
+    --space-120: 12rem;
+    --space-130: 13rem;
+    --space-150: 15rem;
+    --space-160: 16rem;
+    --space-200: 20rem;
+    --base-font-size: 10px;
+    --gutter: var(--space-15);
+    --section-spacing: 40px;
+    --font-xl-style: normal;
+    --font-xl-weight: 400;
+    --font-xl-size: 4.5rem;
+    --font-xl-line-height: .95;
+    --font-xl-family: "Voyage";
+    --font-xl-text-transform: none;
+    --font-xl-letter-spacing: -0.02em;
+    --font-h1-style: normal;
+    --font-h1-weight: 400;
+    --font-h1-size: 4.5rem;
+    --font-h1-line-height: 1;
+    --font-h1-family: "Voyage";
+    --font-h1-text-transform: none;
+    --font-h1-letter-spacing: -0.02em;
+    --font-h2-style: normal;
+    --font-h2-weight: 400;
+    --font-h2-size: 3.6rem;
+    --font-h2-line-height: 1;
+    --font-h2-family: "Voyage";
+    --font-h2-text-transform: none;
+    --font-h2-letter-spacing: 0;
+    --font-h3-style: normal;
+    --font-h3-weight: 400;
+    --font-h3-size: 3.2rem;
+    --font-h3-line-height: 1;
+    --font-h3-family: "Voyage";
+    --font-h3-text-transform: none;
+    --font-h3-letter-spacing: normal;
+    --font-h4-style: normal;
+    --font-h4-weight: 400;
+    --font-h4-size: 2.8rem;
+    --font-h4-line-height: 1.1;
+    --font-h4-family: "Voyage";
+    --font-h4-text-transform: none;
+    --font-h4-letter-spacing: 0;
+    --font-h5-style: normal;
+    --font-h5-weight: 400;
+    --font-h5-size: 2rem;
+    --font-h5-line-height: 1.2;
+    --font-h5-family: "davis-sans";
+    --font-h5-text-transform: none;
+    --font-h5-letter-spacing: normal;
+    --font-h6-style: normal;
+    --font-h6-weight: 400;
+    --font-h6-size: 1.6rem;
+    --font-h6-line-height: 1.2;
+    --font-h6-family: "davis-sans";
+    --font-h6-text-transform: none;
+    --font-h6-letter-spacing: .01em;
+    --font-eyebrow-regular-style: normal;
+    --font-eyebrow-regular-weight: 400;
+    --font-eyebrow-regular-size: 1.2rem;
+    --font-eyebrow-regular-line-height: 1.4;
+    --font-eyebrow-regular-family: "davis-sans";
+    --font-eyebrow-regular-text-transform: uppercase;
+    --font-eyebrow-regular-letter-spacing: .04em;
+    --font-eyebrow-small-style: normal;
+    --font-eyebrow-small-weight: 400;
+    --font-eyebrow-small-size: 1rem;
+    --font-eyebrow-small-line-height: 1.4;
+    --font-eyebrow-small-family: "davis-sans";
+    --font-eyebrow-small-text-transform: uppercase;
+    --font-eyebrow-small-letter-spacing: .04em;
+    --font-utility-1-style: normal;
+    --font-utility-1-weight: 400;
+    --font-utility-1-size: 1.2rem;
+    --font-utility-1-line-height: 1.4;
+    --font-utility-1-family: "davis-sans";
+    --font-utility-1-text-transform: uppercase;
+    --font-utility-1-letter-spacing: .04em;
+    --font-utility-2-style: normal;
+    --font-utility-2-weight: 400;
+    --font-utility-2-size: 1rem;
+    --font-utility-2-line-height: 1.4;
+    --font-utility-2-family: "davis-sans";
+    --font-utility-2-text-transform: uppercase;
+    --font-utility-2-letter-spacing: .04em;
+    --font-quote-style: normal;
+    --font-quote-weight: 400;
+    --font-quote-size: 2.8rem;
+    --font-quote-line-height: 1.1;
+    --font-quote-family: "Voyage";
+    --font-quote-text-transform: none;
+    --font-quote-letter-spacing: 0;
+    --font-body-1-style: normal;
+    --font-body-1-weight: 300;
+    --font-body-1-size: 1.6rem;
+    --font-body-1-line-height: 1.4;
+    --font-body-1-family: "davis-sans";
+    --font-body-1-text-transform: none;
+    --font-body-1-letter-spacing: normal;
+    --font-body-1-bold-style: normal;
+    --font-body-1-bold-weight: 400;
+    --font-body-1-bold-size: 1.6rem;
+    --font-body-1-bold-line-height: 1.4;
+    --font-body-1-bold-family: "davis-sans";
+    --font-body-1-bold-text-transform: none;
+    --font-body-1-bold-letter-spacing: normal;
+    --font-body-2-style: normal;
+    --font-body-2-weight: 300;
+    --font-body-2-size: 1.4rem;
+    --font-body-2-line-height: 1.3;
+    --font-body-2-family: "davis-sans";
+    --font-body-2-text-transform: none;
+    --font-body-2-letter-spacing: normal;
+    --font-body-2-bold-style: normal;
+    --font-body-2-bold-weight: 400;
+    --font-body-2-bold-size: 1.4rem;
+    --font-body-2-bold-line-height: 1.3;
+    --font-body-2-bold-family: "davis-sans";
+    --font-body-2-bold-text-transform: none;
+    --font-body-2-bold-letter-spacing: normal;
+    --font-small-style: normal;
+    --font-small-weight: 300;
+    --font-small-size: 1.2rem;
+    --font-small-line-height: 1.3;
+    --font-small-family: "davis-sans";
+    --font-small-text-transform: none;
+    --font-small-letter-spacing: normal;
+    --font-caption-style: normal;
+    --font-caption-weight: 300;
+    --font-caption-size: 1.1rem;
+    --font-caption-line-height: 1.4;
+    --font-caption-family: "davis-sans";
+    --font-caption-text-transform: none;
+    --font-caption-letter-spacing: normal;
+    --font-tag-text-style: normal;
+    --font-tag-text-weight: 400;
+    --font-tag-text-size: .7rem;
+    --font-tag-text-line-height: 1;
+    --font-tag-text-family: "davis-sans";
+    --font-tag-text-text-transform: uppercase;
+    --font-tag-text-letter-spacing: .04em;
+    --font-xl: var(--font-xl-style) var(--font-xl-weight) var(--font-xl-size) / var(--font-xl-line-height) var(--font-xl-family);
+    --font-h1: var(--font-h1-style) var(--font-h1-weight) var(--font-h1-size) / var(--font-h1-line-height) var(--font-h1-family);
+    --font-h2: var(--font-h2-style) var(--font-h2-weight) var(--font-h2-size) / var(--font-h2-line-height) var(--font-h2-family);
+    --font-h3: var(--font-h3-style) var(--font-h3-weight) var(--font-h3-size) / var(--font-h3-line-height) var(--font-h3-family);
+    --font-h4: var(--font-h4-style) var(--font-h4-weight) var(--font-h4-size) / var(--font-h4-line-height) var(--font-h4-family);
+    --font-h5: var(--font-h5-style) var(--font-h5-weight) var(--font-h5-size) / var(--font-h5-line-height) var(--font-h5-family);
+    --font-h6: var(--font-h6-style) var(--font-h6-weight) var(--font-h6-size) / var(--font-h5-line-height) var(--font-h6-family);
+    --font-eyebrow-regular: var(--font-eyebrow-regular-style) var(--font-eyebrow-regular-weight) var(--font-eyebrow-regular-size) / var(--font-eyebrow-regular-line-height) var(--font-eyebrow-regular-family);
+    --font-eyebrow-small: var(--font-eyebrow-small-style) var(--font-eyebrow-small-weight) var(--font-eyebrow-small-size) / var(--font-eyebrow-small-line-height) var(--font-eyebrow-small-family);
+    --font-utility-1: var(--font-utility-1-style) var(--font-utility-1-weight) var(--font-utility-1-size) / var(--font-utility-1-line-height) var(--font-utility-1-family);
+    --font-utility-2: var(--font-utility-2-style) var(--font-utility-2-weight) var(--font-utility-2-size) / var(--font-utility-2-line-height) var(--font-utility-2-family);
+    --font-quote: var(--font-quote-style) var(--font-quote-weight) var(--font-quote-size) / var(--font-quote-line-height) var(--font-quote-family);
+    --font-body-1: var(--font-body-1-style) var(--font-body-1-weight) var(--font-body-1-size) / var(--font-body-1-line-height) var(--font-body-1-family);
+    --font-body-1-bold: var(--font-body-1-bold-style) var(--font-body-1-bold-weight) var(--font-body-1-bold-size) / var(--font-body-1-bold-line-height) var(--font-body-1-bold-family);
+    --font-body-2: var(--font-body-2-style) var(--font-body-2-weight) var(--font-body-2-size) / var(--font-body-2-line-height) var(--font-body-2-family);
+    --font-body-2-bold: var(--font-body-2-bold-style) var(--font-body-2-bold-weight) var(--font-body-2-bold-size) / var(--font-body-2-bold-line-height) var(--font-body-2-bold-family);
+    --font-small: var(--font-small-style) var(--font-small-weight) var(--font-small-size) / var(--font-small-line-height) var(--font-small-family);
+    --font-caption: var(--font-caption-style) var(--font-caption-weight) var(--font-caption-size) / var(--font-caption-line-height) var(--font-caption-family);
+    --font-tag-text: var(--font-tag-text-style) var(--font-tag-text-weight) var(--font-tag-text-size) / var(--font-tag-text-line-height) var(--font-tag-text-family);
+}
+
+.hero {
+    --border-color: var(--color-black);
+    position: relative
+}
+
+@media(min-width: 1024px) {
+    .hero__blocks--grid {
+        display:grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column
+    }
+}
+
+.hero__block {
+    position: relative
+}
+
+@media(min-width: 1024px) {
+    .hero__block {
+        aspect-ratio:var(--block-aspect-ratio,1)
+    }
+}
+
+.hero__section-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.hero__content-block--below-image {
+    aspect-ratio: auto
+}
+
+.hero__image-block {
+    display: none;
+    position: relative
+}
+
+@media(min-width: 1024px) {
+    .hero__image-block {
+        display:block
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero__image-block-image {
+        position:absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0
+    }
+}
+
+.hero__content-block-image {
+    display: none
+}
+
+@media(min-width: 1024px) {
+    .hero__content-block-image {
+        display:block
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero__content-block-mobile-image {
+        display:none
+    }
+}
+
+.hero__content {
+    z-index: 15;
+    position: relative;
+    background: var(--color-off-white-sand);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 var(--space-40);
+    margin-top: -100px;
+    padding: var(--space-40) var(--space-40) var(--space-50)
+}
+
+@media(min-width: 1024px) {
+    .hero__content {
+        margin:0 auto;
+        margin-top: -120px
+    }
+}
+
+.hero__content--below-image {
+    max-width: 931px
+}
+
+.hero__content--no-box {
+    margin: 0 auto;
+    background: 0;
+    padding: var(--space-15) var(--space-50)
+}
+
+.hero__content--over-image {
+    margin-top: -125px
+}
+
+@media(min-width: 576px) {
+    .hero__content--over-image {
+        top: 0;
+        margin:0;
+        bottom: var(--space-90);
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero__content--over-image {
+        max-height: 360px;
+        max-width: 360px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero__content-block-image--background {
+        position:absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0
+    }
+}
+
+@media(max-width: 430px) {
+.image.hero__content-block-image--background {
+    display: none;
+}
+.hero__content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+}
+
+.hero__content-block-video {
+    padding-bottom: var(--aspect-ratio-mobile)
+}
+
+@media(min-width: 1024px) {
+    .hero__content-block-video {
+        aspect-ratio:2;
+        padding-bottom: 0
+    }
+}
+
+@media(min-width: 1024px) {
+.double-border {
+    --border-shadow: inset 0 0 0 8px var(--background-color,var(--color-off-white-sand)),inset 0 0 0 10px var(--border-color,#000),inset 0 0 0 13px var(--background-color,var(--color-off-white-sand)),inset 0 0 0 14px var(--border-color,#000);
+}
+}
+
+.double-border {
+    --border-shadow: inset 0 0 0 8px var(--background-color,var(--color-off-white-sand)),inset 0 0 0 10px var(--border-color,#000),inset 0 0 0 13px var(--background-color,var(--color-off-white-sand)),inset 0 0 0 14px var(--border-color,#000);
+    box-shadow: var(--border-shadow);
+}
+
+.hero__content-eyebrow {
+    font: var(--font-eyebrow-regular);
+    text-transform: var(--font-eyebrow-regular-text-transform);
+    letter-spacing: var(--font-eyebrow-regular-letter-spacing);
+    margin-bottom: var(--space-10)
+}
+
+.button--primary, .cc-settings-view .cc-settings-dialog button.cc-btn.cc-btn-accept-all, .cc-window.cc-banner.cc-window button.cc-btn.cc-allow {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+    border: .1rem solid transparent;
+    border-radius: .4rem;
+    cursor: pointer;
+    max-width: 100%;
+    padding: 0.8rem;
+    font: normal 400 0.8rem / 1.4 "davis-sans" !important; 
+    text-align: center;
+    transition: background .15s ease-in-out, color .15s ease-in-out, border .15s ease-in-out;
+    text-decoration: none;
+    max-width: 160px;
+    margin-top: 1rem !important;
+}
+
+.button--primary:hover, .cc-settings-view .cc-settings-dialog button.cc-btn.cc-btn-accept-all:hover, .cc-window.cc-banner.cc-window button.cc-btn.cc-allow:hover {
+    background: #fbf8f1;
+    border-color: #222;
+    color: #222;
+}
+
+.hero__content-heading {
+    font: normal 400 3rem / .95 "Voyage";
+    text-transform: var(--font-h1-text-transform);
+    letter-spacing: var(--font-h1-letter-spacing)
+}
+
+@media(min-width: 1024px) {
+    .hero__content-heading {
+        font:normal 400 2rem / .95 "Voyage";
+        text-transform: var(--font-h2-text-transform);
+        letter-spacing: var(--font-h2-letter-spacing)
+    }
+}
+
+.hero__content-copy {
+    margin-top: 2rem;
+    max-width: 52.1rem;
+    margin-bottom: 1rem;
+}
+
+.hero__content-cta {
+    margin-top: 1rem;
+    padding: 1rem;
+    font: var(--font-utility-2);
+    text-transform: var(--font-utility-2-text-transform);
+    letter-spacing: var(--font-utility-2-letter-spacing);
+    --button-min-width: 166px
+}
+
+@media(min-width: 1024px) {
+    .hero__content-cta {
+        font:var(--font-utility-1);
+        text-transform: var(--font-utility-1-text-transform);
+        letter-spacing: var(--font-utility-1-letter-spacing);
+        padding: 0.5rem 2rem;
+        --button-min-width: 215px
+    }
+}
+
+@media(min-width: 1366px) {
+    .hero__content--over-image .hero__content-heading {
+        font: normal 400 2.5rem / .95 "Voyage";
+        text-transform: var(--font-xl-text-transform);
+        letter-spacing: var(--font-xl-letter-spacing)
+    }
+}
+
+.hero__accent-image {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    width: 100px;
+    height: auto
+}
+
+@media(min-width: 1024px) {
+    .hero__accent-image {
+        display:block;
+        width: 130px
+    }
+}
+
+.hero__accent-image--1 {
+    top: -10%;
+    left: -10%;
+    width: 35%
+}
+
+.hero__accent-image--2 {
+    bottom: -12%;
+    right: -12%;
+    width: 33%
+}
+
+
+

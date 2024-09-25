@@ -2,6 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+@layer base {
+  root:
+
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -49,6 +55,247 @@
   }
 }
 
+html {
+  font-family: Calibre, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+}
+
+.bg-content1 {
+  --tw-bg-opacity: 1;
+  background-color: #ffffff;
+}
+
+.sm\:my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sm\:mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.backdrop-opacity-disabled {
+  --tw-backdrop-opacity: .5;
+}
+
+.bg-overlay\/50 {
+  background-color: #00000080;
+}
+
+.backdrop-opacity-disabled, .backdrop-saturate-150 {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.esc-size-guide--title {
+  font-weight: 700;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.esc-size-guide--table-wrap {
+  overflow-x: auto;
+}
+
+th.esc-size-guide--heading.esc-size-guide--row1 {
+  background-color: #f4f4f5;
+}
+
+td.esc-size-guide--cell.esc-size-guide--row3 {
+  background-color: #f4f4f5;
+}
+
+td.esc-size-guide--cell.esc-size-guide--row5 {
+  background-color: #f4f4f5;
+}
+
+td.esc-size-guide--cell.esc-size-guide--row7 {
+  background-color: #f4f4f5;
+}
+
+td.esc-size-guide--cell.esc-size-guide--row9 {
+  background-color: #f4f4f5;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row7 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row8 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row9 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row10 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+td.esc-size-guide--cell.esc-size-guide--col1.esc-size-guide--row11 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+.esc-size-guide--table {
+  table-layout: auto !important;
+  white-space: nowrap;
+  margin: auto;
+  width: 100%;
+}
+
+.esc-size-guide--cell, .esc-size-guide--heading {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.esc-size-guide--heading {
+  font-weight: 700;
+}
+
+.esc-size-guide {
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  text-align: center;
+  z-index: 10000001;
+}
+
+button.absolute.appearance-none.select-none.top-1.right-1.rtl\:left-1.rtl\:right-\[unset\].p-2.text-foreground-500.rounded-full.hover\:bg-default-100.active\:bg-default-200.tap-highlight-transparent.outline-none.data-\[focus-visible\=true\]\:z-10.data-\[focus-visible\=true\]\:outline-2.data-\[focus-visible\=true\]\:outline-focus.data-\[focus-visible\=true\]\:outline-offset-2 {
+  right: -4px;
+  top: -40px;
+  background: white;
+}
+
+section#\:Rn6r7rrqfnj6\: {
+  overflow-y: visible;
+  width: 90%;
+}
+
+table {
+  font-family: 'calibre', sans-serif;
+}
+
+button {
+  font-family: 'calibre', sans-serif;
+}
+
+@font-face {
+	font-family: gulliver;
+	src: url("/assets/fonts/ElsevierGulliver-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: voyage;
+	src: url("/assets/fonts/Voyage-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: calibre;
+	src: url("https://tokens.dijets.io/utility-fonts/css/FeyCalibre-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: calibre;
+	src: url("/assets/fonts/FeyCalibre-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: calibre-light;
+	src: url("/assets/fonts/FeyCalibre-light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: calibre-light;
+	src: url("/assets/fonts/FeyCalibre-light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+p {
+	font-family: calibre, sans-serif !important;
+}
+
+.guli {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+  text-wrap: balance;
+  font-family: gulliver,sans-serif!important;
+}
+
+.text-tin {
+  text-align: left;
+  font-size: 13px;
+  color: #959595;
+}
+
 @layer components {
   .content-container {
     @apply max-w-[1440px] w-full mx-auto px-6;
@@ -60,10 +307,6 @@
 
   .text-xsmall-regular {
     @apply text-[10px] leading-4 font-normal;
-  }
-
-  .text-small-regular {
-    @apply text-xs leading-5 font-normal;
   }
 
   .text-small-semi {
@@ -110,3 +353,4 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 }
+

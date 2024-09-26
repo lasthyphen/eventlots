@@ -8,7 +8,7 @@ const Hero = () => {
         <h2 className="guli mt-8 lg:mt-0 text-center lg:text-left lg:text-[1.4rem] text-lg">
         Discover Faha&apos;s Curated Collection
         </h2>
-        <p className="text-pretty text-neutral-600 !mb-6 pb-4">Explore Faha&apos;s carefully selected designs</p>
+        <p className="text-pretty text-neutral-600 !mb-6 pb-4 text-center lg:text-left">Explore Faha&apos;s carefully selected designs</p>
         <a
           className="button button--primary hero__content-cta hidden lg:block"
           href="/store"

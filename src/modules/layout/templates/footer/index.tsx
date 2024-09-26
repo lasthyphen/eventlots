@@ -153,8 +153,8 @@ export default async function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
-          <Text className="txt-compact-small">
+        <div className="block lg:flex w-full mb-16 justify-between text-ui-fg-muted">
+          <Text className="txt-compact-small lg:text-left text-center">
             © {new Date().getFullYear()} Faha Couture. All rights reserved.
           </Text>
           <MedusaCTA />

@@ -454,6 +454,12 @@
     }
 }
 
+@media(max-width: 345px) {
+    .hero__content-heading {
+        font:normal 400 1.6rem / .95 "voyage";
+    }
+}
+
 .hero__content-copy {
     margin-top: 2rem;
     max-width: 52.1rem;

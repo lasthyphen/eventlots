@@ -9,7 +9,7 @@ type ProductInfoProps = {
 const ProductInfo = ({ product }: ProductInfoProps) => {
   return (
     <div id="product-info">
-      <div className="flex flex-col gap-y-4 lg:max-w-[500px] mx-auto">
+      <div className="flex flex-col gap-y-4 mx-auto">
         {product.collection && (
           <LocalizedClientLink
             href={`/collections/${product.collection.handle}`}
@@ -18,6 +18,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
             {product.collection.title}
           </LocalizedClientLink>
         )}
+        
         <Heading level="h2" className="text-3xl leading-10 text-ui-fg-base" data-testid="product-title">
           {product.title}
         </Heading>

@@ -12,6 +12,7 @@ import ProductInfo from "@modules/products/templates/product-info"
 import SkeletonRelatedProducts from "@modules/skeletons/templates/skeleton-related-products"
 import { notFound } from "next/navigation"
 import ProductActionsWrapper from "./product-actions-wrapper"
+import ProductModal from "./product-modal"
 
 type ProductTemplateProps = {
   product: PricedProduct
@@ -34,14 +35,10 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
         className="flex flex-col small:flex-row small:items-start py-6 relative"
         data-testid="product-container"
       >
-        <div className="flex flex-col small:sticky small:py-0 small:max-w-[300px] w-full py-8 gap-y-6 px-4">
-          <ProductInfo product={product} />
-          <ProductTabs product={product} />
-        </div>
         <div className="block w-full relative">
           <ImageGallery images={product?.images || []} />
         </div>
-        <div className="flex flex-col small:sticky small:py-0 small:max-w-[300px] w-full py-8 gap-y-12 px-4">
+        <div className="flex flex-col small:sticky small:py-0 w-full py-8 gap-y-12 px-4">
         <ProductInfo product={product} />
         <div
   data-orientation="vertical"
@@ -52,23 +49,10 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center gap-4">
           <p className="font-normal font-sans txt-medium text-ui-fg-subtle text-sm">
-            Product Information
+            Size Guide:
           </p>
         </div>
-        <button
-          type="button"
-          aria-expanded="false"
-          data-state="closed"
-          data-orientation="vertical"
-          id=""
-          data-radix-collection-item=""
-        >
-          <div className="text-grey-90 hover:bg-grey-5 active:bg-grey-5 active:text-violet-60 focus:border-violet-60 disabled:text-grey-30 bg-transparent disabled:bg-transparent rounded-rounded group relative p-[6px]">
-            <div className="h-5 w-5">
-              <RulerIcon />
-            </div>
-          </div>
-        </button>
+      <ProductModal/>
       </div>
     </div>
   </h3>
@@ -85,6 +69,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
           >
             <ProductActionsWrapper id={product.id} region={region} />
           </Suspense>
+          <ProductTabs product={product} />
         </div>
       </div>
       <div

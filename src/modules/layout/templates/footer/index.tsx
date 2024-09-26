@@ -10,14 +10,14 @@ export default async function Footer() {
   const { product_categories } = await getCategoriesList(0, 6)
 
   return (
-    <footer className="border-t border-ui-border-base w-full">
+    <footer className="border-t border-ui-border-base w-full bg-[#f1f1f1]">
       <div className="flex flex-col w-full max-w-7xl mx-auto px-8">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>
           <div className="flex w-full max-w-sm flex-col gap-2">
   <h3 className="">Subscribe to Faha newsletter</h3>
   <form
-    className="flex gap-x-2"
+    className="flex gap-x-2 lg:w-[400px] w-[260px]"
     action="javascript:throw new Error('React form unexpectedly submitted.')"
   >
     <input

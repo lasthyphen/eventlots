@@ -11,7 +11,7 @@ const Hero = () => {
         <p className="text-pretty text-neutral-600 !mb-6">Explore our carefully selected products for your home and lifestyle.</p>
         <a
           className="button button--primary hero__content-cta hidden lg:block"
-          href="/products"
+          href="/store"
         >
           Shop Now
         </a>
@@ -24,7 +24,7 @@ const Hero = () => {
           The Seasons Most Enchanting Prints
         </div>
         <a
-          href="/collections/new-arrivals"
+          href="/store"
           className="button button--primary hero__content-cta"
         >
           Shop Now

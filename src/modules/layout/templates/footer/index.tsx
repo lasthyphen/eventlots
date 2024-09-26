@@ -14,12 +14,26 @@ export default async function Footer() {
       <div className="flex flex-col w-full max-w-7xl mx-auto px-8">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
-            >
-              Faha Couture
-            </LocalizedClientLink>
+          <div className="flex w-full max-w-sm flex-col gap-2">
+  <h3 className="">Subscribe to Faha newsletter</h3>
+  <form
+    className="flex gap-x-2"
+    action="javascript:throw new Error('React form unexpectedly submitted.')"
+  >
+    <input
+      type="email"
+      className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 max-w-lg flex-1"
+      placeholder="Enter your email"
+      name="email"
+    />
+    <button
+      className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 bg-[#000000] text-white shadow hover:bg-primary/90 h-9 px-4 py-2 w-24 rounded-full"
+      type="submit"
+    >
+      Subscribe
+    </button>
+  </form>
+</div>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-2">
             {product_categories && product_categories?.length > 0 && (
@@ -32,7 +46,6 @@ export default async function Footer() {
                     if (c.parent_category) {
                       return
                     }
-
                     const children =
                       c.category_children?.map((child) => ({
                         name: child.name,
@@ -108,32 +121,32 @@ export default async function Footer() {
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="https://github.com/medusajs"
+                    href="https://faha-collections.com"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    GitHub
+                    Autumn Collection
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://docs.medusajs.com"
+                    href="mailto:couturefaha@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Documentation
+                    Contact Us
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
+                    href=""
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Source code
+                    New Arrivals
                   </a>
                 </li>
               </ul>

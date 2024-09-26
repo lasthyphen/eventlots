@@ -9,6 +9,9 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  openGraph: {
+    images: 'https://tokens.dijets.io/og-faha.com',
+  },
 }
 
 export default function RootLayout(props: { children: React.ReactNode }) {

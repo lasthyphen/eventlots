@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Faha Couture",
   description:
     "Browse & Shop Faha's dazziling collection of handmade clothes",
+  openGraph: {
+      images: 'https://tokens.dijets.io/og-faha.com',
+    },
 }
 
 const getCollectionsWithProducts = cache(

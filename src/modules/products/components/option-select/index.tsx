@@ -3,7 +3,6 @@ import { clx } from "@medusajs/ui"
 import React from "react"
 
 import { onlyUnique } from "@lib/util/only-unique"
-import ProductModal from "@modules/products/templates/product-modal"
 
 type OptionSelectProps = {
   option: ProductOption

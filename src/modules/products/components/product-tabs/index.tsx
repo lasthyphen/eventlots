@@ -22,6 +22,18 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       label: "Shipping & Returns",
       component: <ShippingInfoTab />,
     },
+    {
+      label: "Size & Fit",
+      component: <SizeGuide />,
+    },
+    {
+      label: "Quality Assurance",
+      component: <ShippingInfoTab />,
+    },
+    {
+      label: "Product Care",
+      component: <ShippingInfoTab />,
+    },
   ]
 
   return (
@@ -48,26 +60,26 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
       <div className="grid grid-cols-2 gap-x-8">
         <div className="flex flex-col gap-y-4">
           <div>
-            <span className="font-semibold">Material</span>
-            <p>{product.material ? product.material : "-"}</p>
+            <span className="font-normal">Material</span>
+            <p className="text-small text-ui-fg-muted hover:text-ui-fg-subtle">{product.material ? product.material : "-"}</p>
           </div>
           <div>
-            <span className="font-semibold">Country of origin</span>
-            <p>{product.origin_country ? product.origin_country : "-"}</p>
+            <span className="font-normal">Country of origin</span>
+            <p className="text-small text-ui-fg-muted hover:text-ui-fg-subtle">{product.origin_country ? product.origin_country : "-"}</p>
           </div>
           <div>
-            <span className="font-semibold">Type</span>
-            <p>{product.type ? product.type.value : "-"}</p>
+            <span className="font-normal">Type</span>
+            <p className="text-small text-ui-fg-muted hover:text-ui-fg-subtle">{product.type ? product.type.value : "-"}</p>
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
           <div>
-            <span className="font-semibold">Weight</span>
-            <p>{product.weight ? `${product.weight} g` : "-"}</p>
+            <span className="font-normal">Weight</span>
+            <p className="text-small text-ui-fg-muted hover:text-ui-fg-subtle">{product.weight ? `${product.weight} g` : "-"}</p>
           </div>
           <div>
-            <span className="font-semibold">Dimensions</span>
-            <p>
+            <span className="font-normal">Dimensions</span>
+            <p className="text-small text-ui-fg-muted hover:text-ui-fg-subtle">
               {product.length && product.width && product.height
                 ? `${product.length}L x ${product.width}W x ${product.height}H`
                 : "-"}
@@ -84,11 +96,22 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
   )
 }
 
+const SizeGuide = () => {
+  return(
+<div className="premium-suiting--content">
+      <img
+        loading="lazy"
+        src="https://tokens.dijets.io/measurement-skd_07.png"
+        alt="" />
+      </div>
+  )
+}
+
 const ShippingInfoTab = () => {
   return (
     <div className="text-small-regular py-8">
       <div className="grid grid-cols-1 gap-y-8">
-        <div className="flex items-start gap-x-2">
+        <div className="flex items-start gap-x-4">
           <FastDelivery />
           <div>
             <span className="font-semibold">Fast delivery</span>
@@ -98,7 +121,7 @@ const ShippingInfoTab = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-x-2">
+        <div className="flex items-start gap-x-4">
           <Refresh />
           <div>
             <span className="font-semibold">Simple exchanges</span>
@@ -108,7 +131,7 @@ const ShippingInfoTab = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-x-2">
+        <div className="flex items-start gap-x-4">
           <Back />
           <div>
             <span className="font-semibold">Easy returns</span>

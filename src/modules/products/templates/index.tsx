@@ -40,23 +40,6 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
         </div>
         <div className="flex flex-col small:sticky small:py-0 w-full py-8 gap-y-12 px-4">
         <ProductInfo product={product} />
-        <div
-  data-orientation="vertical"
-  className="border-grey-20 group border-t last:mb-0 border-b py-3"
->
-  <h3 data-orientation="vertical" data-state="closed" className="px-1">
-    <div className="flex flex-col">
-      <div className="flex w-full items-center justify-between">
-        <div className="flex items-center gap-4">
-          <p className="font-normal font-sans txt-medium text-ui-fg-subtle text-sm">
-            Size Guide:
-          </p>
-        </div>
-      <ProductModal/>
-      </div>
-    </div>
-  </h3>
-</div>
           <ProductOnboardingCta />
           <Suspense
             fallback={

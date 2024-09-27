@@ -31,13 +31,14 @@ export default function ProductPrice({
   return (
     <div className="flex flex-col text-ui-fg-base">
       <span
-        className={clx("text-xl-semi", "tracking-wide", {
+        className={clx("text-[1.75rem]", "tracking-wide", "-mb-6", {
           "text-ui-fg-interactive": selectedPrice.price_type === "sale",
         })}
       >
         {!variant && ""}
         <span
           data-testid="product-price"
+          className="font-normal text-[rgb(28,28,28,0.65)] font-['calibre']"
           data-value={selectedPrice.calculated_price_number}
         >
           {selectedPrice.calculated_price}

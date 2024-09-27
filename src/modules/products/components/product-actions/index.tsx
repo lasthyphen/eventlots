@@ -137,10 +137,12 @@ export default function ProductActions({
 
   return (
     <>
-      <div className="flex flex-col gap-y-4" ref={actionsRef}>
+      <ProductPrice product={product} variant={variant} region={region} />
+      <Divider className="mt-0"/>
+      <div className="flex flex-col gap-y-4 -mt-6" ref={actionsRef}>
         <div>
           {product.variants.length > 1 && (
-            <div className="flex flex-col gap-y-4">
+            <div className="flex flex-col gap-y-6">
               {(product.options || []).map((option) => {
                 return (
                   <div key={option.id}>
@@ -155,12 +157,9 @@ export default function ProductActions({
                   </div>
                 )
               })}
-              <Divider className="mt-4"/>
             </div>
           )}
         </div>
-
-        <ProductPrice product={product} variant={variant} region={region} />
 
         <Button
           onClick={handleAddToCart}

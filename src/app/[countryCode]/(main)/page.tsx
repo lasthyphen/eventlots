@@ -109,8 +109,8 @@ export default async function Home({
           data-nimg={1}
           className="w-full scale-105 object-cover transition-all group-hover:scale-100 group-hover:opacity-75"
           style={{ color: "transparent" }}
-          srcSet="https://faha-mimo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapparel.e8af679e.jpg&w=1200&q=75 1x, https://faha-mimo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapparel.e8af679e.jpg&w=3840&q=75 2x"
-          src="https://faha-mimo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapparel.e8af679e.jpg&w=3840&q=75"
+          srcSet="https://tokens.dijets.io/apparel2.jpg"
+          src="https://tokens.dijets.io/apparel2.jpg"
         />
       </div>
       <div className="justify-end gap-2 px-4 py-2 text-neutral-600">

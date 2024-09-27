@@ -3,7 +3,7 @@ import React from "react"
 import { IconProps } from "types/icon"
 
 const Back: React.FC<IconProps> = ({
-  size = "16",
+  size = "24",
   color = "currentColor",
   ...attributes
 }) => {
